@@ -1,6 +1,8 @@
 ## 💻 Sobre o projeto
 
-Build: https://redux-cart-teste.netlify.app/
+API - [https://graphql-pokeapi.vercel.app/](https://graphql-pokeapi.vercel.app/)
+
+Build: https://poke-cart-teste.netlify.app/
 
 ## 🛠 Tecnologias
 
@@ -13,7 +15,7 @@ Build: https://redux-cart-teste.netlify.app/
 -   **[SASS](https://sass-lang.com/)**
 -   **[Styled components](https://styled-components.com/)**
 -   **[Material-UI](https://material-ui.com/pt/)**
--   **[Framer Motion](https://www.framer.com/motion/)**
+-   **[GraphQL](https://graphql.org/)**
 -   **[Local storage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage)**
 
 ### Pré-requisitos
@@ -27,10 +29,10 @@ Além disso, é bom ter um editor de código para trabalhar com o projeto, como 
 
 ```bash
 # Clone o repositório
-$ git clone https://github.com/luizmr/redux-cart.git
+$ git clone https://github.com/luizmr/poke-cart.git
 
 # Acessa a pasta do projeto pelo cmd/terminal
-$ cd redux-cart
+$ cd poke-cart
 
 # Instala todas as dependências da aplicação pelo cmd/terminal
 $ npm install
