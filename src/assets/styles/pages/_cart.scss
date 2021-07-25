@@ -1,0 +1,66 @@
+.cart {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 40px;
+	justify-content: flex-start;
+	padding: 50px 30px 30px 10px;
+	gap: 10px;
+
+	.cart__summary {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: flex-start;
+		gap: 30px;
+		margin-top: 20px;
+
+		.summary {
+			display: flex;
+			justify-content: flex-start;
+			gap: 20px;
+			width: 100%;
+			flex-direction: column;
+		}
+
+		.barChart {
+			background-color: $secondary-bg-color;
+			padding: 20px 30px;
+			border-radius: 20px;
+			box-shadow: 0px 0px 20px $box-shadow;
+
+			.pokemons__header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-bottom: 10px;
+				border-bottom: 2px solid $primary-bg-color;
+				margin-bottom: 20px;
+				.header__info {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+
+					p {
+						font-weight: 700;
+						font-size: 1.2rem;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+			canvas {
+				width: 100%;
+				max-height: 500px;
+			}
+		}
+	}
+}
+
+@media (max-width: 812px) {
+	.cart {
+		gap: 30px;
+		.cart__summary {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 220px;
+		}
+	}
+}

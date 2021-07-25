@@ -1,0 +1,20 @@
+$primary-main-color: #e73b0c;
+$secondary-main-color: #f6446b;
+$third-main-color: #f08e1c;
+$primary-text-color: #e73b0c;
+$secondary-text-color: #ada5ac;
+$primary-bg-color: #f7f7ff;
+$secondary-bg-color: #ffffff;
+$third-bg-color: #f5d1ae;
+$primary-hover: rgba(231, 59, 12, 0.1);
+$box-shadow: #e5e5ff;
+$primary-ripple: #e73b0c;
+$secondary-ripple: #f6446b;
+
+body {
+	background-color: $primary-bg-color;
+}
+
+p {
+	color: $primary-text-color;
+}

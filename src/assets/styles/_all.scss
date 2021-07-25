@@ -1,0 +1,16 @@
+.fire {
+	@import 'fireTheme';
+	@import 'components/components';
+	@import 'pages/pages';
+}
+.water {
+	@import 'waterTheme';
+	@import 'components/components';
+	@import 'pages/pages';
+}
+.grass {
+	@import 'grassTheme';
+	@import 'components/components';
+	@import 'pages/pages';
+}
+@import 'layout';

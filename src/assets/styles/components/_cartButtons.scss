@@ -1,0 +1,137 @@
+.cart__header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+
+	.buttons__right {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.button__common {
+		border-radius: 20px;
+		padding: 5px 15px;
+		.MuiButton-label {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			p {
+				font-size: 1rem;
+				font-weight: 600;
+			}
+			svg {
+				transition: all 0.3s ease-in-out;
+				transform: scale(1.5);
+				margin-bottom: 3px;
+			}
+		}
+	}
+
+	.button__back {
+		&:hover {
+			background-color: transparent;
+
+			.MuiButton-label {
+				svg {
+					transform: scale(1.5) translateX(-5px);
+				}
+			}
+		}
+		.MuiTouchRipple-root {
+			color: $primary-ripple;
+		}
+		.MuiButton-label {
+			p {
+				color: $primary-text-color;
+			}
+			svg {
+				color: $primary-text-color;
+			}
+		}
+	}
+
+	.button__payment {
+		background-color: $primary-main-color;
+		&:hover {
+			background-color: $primary-main-color;
+
+			.MuiButton-label {
+				svg {
+					transform: scale(1.5) translateX(5px);
+				}
+			}
+		}
+		.MuiTouchRipple-root {
+			color: $primary-ripple;
+		}
+		.MuiButton-label {
+			p {
+				color: $secondary-bg-color;
+			}
+			svg {
+				color: $secondary-bg-color;
+			}
+		}
+	}
+
+	.button__clear {
+		&:hover {
+			background-color: transparent;
+			.MuiButton-label {
+				svg {
+					transform: scale(1.7);
+				}
+			}
+		}
+		.MuiTouchRipple-root {
+			color: $secondary-ripple;
+		}
+		.MuiButton-label {
+			p {
+				color: $secondary-main-color;
+			}
+			svg {
+				color: $secondary-main-color;
+			}
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	.cart__header {
+		.button__back {
+			margin-right: auto !important;
+		}
+
+		.buttons__right {
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+		}
+	}
+}
+
+@media (max-width: 414px) {
+	.cart__header {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 50px 1fr;
+		width: 100%;
+		justify-content: flex-start;
+		width: 90%;
+
+		.button__back {
+			margin: auto !important;
+		}
+
+		.buttons__right {
+			gap: 10px;
+		}
+	}
+}

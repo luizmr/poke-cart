@@ -1,0 +1,97 @@
+.navbar {
+	height: 80px;
+	width: 100%;
+	border-bottom: 3px solid $primary-main-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $secondary-bg-color;
+
+	img {
+		height: 35px;
+		margin-left: 80px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.navbar__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 30px;
+		margin-right: 30px;
+
+		.navbar__infoCart {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			// gap: 5px;
+
+			p:first-child {
+				text-transform: uppercase;
+				font-size: 0.7rem;
+				font-weight: 600;
+			}
+
+			.infoCart__cart {
+				border-radius: 20px;
+				padding: 2px 20px;
+				&:hover {
+					background-color: $primary-hover;
+
+					.MuiButton-label {
+						svg {
+							transform: scale(1.5) rotate(20deg);
+						}
+					}
+				}
+				.MuiTouchRipple-root {
+					color: $primary-ripple;
+				}
+				.MuiButton-label {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					p {
+						font-size: 1.1rem;
+						font-weight: 600;
+						color: $primary-main-color;
+					}
+					svg {
+						transition: all 0.3s ease-in-out;
+						transform: scale(1.5);
+						color: $primary-main-color;
+						margin-bottom: 3px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 440px) {
+	.navbar {
+		position: fixed;
+		z-index: 10000;
+		img {
+			margin-left: 20px;
+		}
+
+		.navbar__info {
+			gap: 0;
+			margin-right: 20px;
+
+			.navbar__infoCart {
+				.infoCart__cart {
+					p {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
